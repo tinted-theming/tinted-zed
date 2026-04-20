@@ -1,0 +1,379 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "name": "Tinted8 {{scheme.name}}",
+  "author": "Tinted Theming (https://github.com/tinted-theming) and {{scheme.author}}",
+  "themes": [
+    {
+      "name": "Tinted8 {{scheme.name}}",
+      "appearance": "{{#option.is-dark-variant}}dark{{/option.is-dark-variant}}{{^option.is-dark-variant}}light{{/option.is-dark-variant}}",
+      "style": {
+        "border": "#{{ui.border.normal.hex}}ff",
+        "border.variant": "#{{ui.global.background.light.hex}}ff",
+        "border.focused": "#{{ui.accent.normal.hex}}ff",
+        "border.selected": "#{{ui.border.selected.hex}}ff",
+        "border.transparent": "#00000000",
+        "border.disabled": "#{{ui.border.disabled.hex}}ff",
+        "elevated_surface.background": "#{{ui.global.background.dark.hex}}ff",
+        "surface.background": "#{{ui.global.background.dark.hex}}ff",
+        "background": "#{{ui.global.background.normal.hex}}ff",
+        "element.background": "#{{ui.global.background.light.hex}}ff",
+        "element.hover": "#{{ui.selection.background.hex}}ff",
+        "element.active": "#{{ui.selection.background.hex}}ff",
+        "element.selected": "#{{ui.selection.background.hex}}ff",
+        "element.disabled": "#{{ui.global.background.dark.hex}}ff",
+        "drop_target.background": "#{{ui.highlight.text.background.hex}}80",
+        "ghost_element.background": "#00000000",
+        "ghost_element.hover": "#{{ui.selection.background.hex}}ff",
+        "ghost_element.active": "#{{ui.selection.background.hex}}ff",
+        "ghost_element.selected": "#{{ui.selection.background.hex}}ff",
+        "ghost_element.disabled": "#{{ui.global.background.dark.hex}}ff",
+        "text": "#{{ui.global.foreground.normal.hex}}ff",
+        "text.muted": "#{{ui.global.foreground.dark.hex}}ff",
+        "text.placeholder": "#{{ui.whitespace.foreground.hex}}ff",
+        "text.disabled": "#{{ui.whitespace.foreground.hex}}ff",
+        "text.accent": "#{{ui.accent.normal.hex}}ff",
+        "icon": "#{{ui.global.foreground.normal.hex}}ff",
+        "icon.muted": "#{{ui.global.foreground.dark.hex}}ff",
+        "icon.disabled": "#{{ui.whitespace.foreground.hex}}ff",
+        "icon.placeholder": "#{{ui.global.foreground.dark.hex}}ff",
+        "icon.accent": "#{{ui.accent.normal.hex}}ff",
+        "status_bar.background": "#{{ui.global.background.dark.hex}}ff",
+        "title_bar.background": "#{{ui.global.background.dark.hex}}ff",
+        "title_bar.inactive_background": "#{{ui.global.background.normal.hex}}ff",
+        "toolbar.background": "#{{ui.global.background.normal.hex}}ff",
+        "tab_bar.background": "#{{ui.global.background.dark.hex}}ff",
+        "tab.inactive_background": "#{{ui.global.background.dark.hex}}ff",
+        "tab.active_background": "#{{ui.global.background.normal.hex}}ff",
+        "search.match_background": "#{{ui.highlight.search.foreground.hex}}66",
+        "search.active_match_background": "#{{ui.status.info.hex}}66",
+        "panel.background": "#{{ui.global.background.dark.hex}}ff",
+        "panel.focused_border": null,
+        "pane.focused_border": null,
+        "scrollbar.thumb.background": "#{{ui.global.foreground.dark.hex}}4c",
+        "scrollbar.thumb.hover_background": "#{{ui.selection.background.hex}}ff",
+        "scrollbar.thumb.border": "#{{ui.selection.background.hex}}ff",
+        "scrollbar.track.background": "#00000000",
+        "scrollbar.track.border": "#{{ui.global.background.dark.hex}}ff",
+        "editor.foreground": "#{{ui.global.foreground.normal.hex}}ff",
+        "editor.background": "#{{ui.global.background.normal.hex}}ff",
+        "editor.gutter.background": "#{{ui.gutter.background.hex}}ff",
+        "editor.subheader.background": "#{{ui.global.background.dark.hex}}ff",
+        "editor.active_line.background": "#{{ui.highlight.line.background.hex}}80",
+        "editor.highlighted_line.background": "#{{ui.highlight.line.background.hex}}ff",
+        "editor.line_number": "#{{ui.gutter.foreground.hex}}ff",
+        "editor.active_line_number": "#{{ui.global.foreground.normal.hex}}ff",
+        "editor.hover_line_number": "#{{ui.global.foreground.dark.hex}}ff",
+        "editor.invisible": "#{{ui.whitespace.foreground.hex}}ff",
+        "editor.wrap_guide": "#{{ui.indent-guide.background.hex}}0d",
+        "editor.active_wrap_guide": "#{{ui.indent-guide.active-background.hex}}1a",
+        "editor.document_highlight.read_background": "#{{ui.accent.normal.hex}}1a",
+        "editor.document_highlight.write_background": "#{{ui.selection.background.hex}}66",
+        "terminal.background": "#{{ui.global.background.normal.hex}}ff",
+        "terminal.foreground": "#{{palette.white.normal.hex}}ff",
+        "terminal.bright_foreground": "#{{palette.white.bright.hex}}ff",
+        "terminal.dim_foreground": "#{{palette.white.dim.hex}}ff",
+        "terminal.ansi.black": "#{{palette.black.normal.hex}}ff",
+        "terminal.ansi.bright_black": "#{{palette.black.bright.hex}}ff",
+        "terminal.ansi.dim_black": "#{{palette.black.dim.hex}}ff",
+        "terminal.ansi.red": "#{{palette.red.normal.hex}}ff",
+        "terminal.ansi.bright_red": "#{{palette.red.bright.hex}}ff",
+        "terminal.ansi.dim_red": "#{{palette.red.dim.hex}}ff",
+        "terminal.ansi.green": "#{{palette.green.normal.hex}}ff",
+        "terminal.ansi.bright_green": "#{{palette.green.bright.hex}}ff",
+        "terminal.ansi.dim_green": "#{{palette.green.dim.hex}}ff",
+        "terminal.ansi.yellow": "#{{palette.yellow.normal.hex}}ff",
+        "terminal.ansi.bright_yellow": "#{{palette.yellow.bright.hex}}ff",
+        "terminal.ansi.dim_yellow": "#{{palette.yellow.dim.hex}}ff",
+        "terminal.ansi.blue": "#{{palette.blue.normal.hex}}ff",
+        "terminal.ansi.bright_blue": "#{{palette.blue.bright.hex}}ff",
+        "terminal.ansi.dim_blue": "#{{palette.blue.dim.hex}}ff",
+        "terminal.ansi.magenta": "#{{palette.magenta.normal.hex}}ff",
+        "terminal.ansi.bright_magenta": "#{{palette.magenta.bright.hex}}ff",
+        "terminal.ansi.dim_magenta": "#{{palette.magenta.dim.hex}}ff",
+        "terminal.ansi.cyan": "#{{palette.cyan.normal.hex}}ff",
+        "terminal.ansi.bright_cyan": "#{{palette.cyan.bright.hex}}ff",
+        "terminal.ansi.dim_cyan": "#{{palette.cyan.dim.hex}}ff",
+        "terminal.ansi.white": "#{{palette.white.normal.hex}}ff",
+        "terminal.ansi.bright_white": "#{{palette.white.bright.hex}}ff",
+        "terminal.ansi.dim_white": "#{{palette.white.dim.hex}}ff",
+        "link_text.hover": "#{{ui.link.normal.foreground.hex}}ff",
+        "version_control.added": "#{{ui.status.success.hex}}ff",
+        "version_control.modified": "#{{ui.status.warning.hex}}ff",
+        "version_control.word_added": "#{{ui.status.success.hex}}59",
+        "version_control.word_deleted": "#{{ui.status.error.hex}}cc",
+        "version_control.deleted": "#{{ui.status.error.hex}}ff",
+        "version_control.conflict_marker.ours": "#{{ui.status.success.hex}}1a",
+        "version_control.conflict_marker.theirs": "#{{ui.accent.normal.hex}}1a",
+        "conflict": "#{{ui.status.warning.hex}}ff",
+        "conflict.background": "#{{ui.status.warning.hex}}1a",
+        "conflict.border": "#{{ui.status.warning.hex}}80",
+        "created": "#{{ui.status.success.hex}}ff",
+        "created.background": "#{{ui.status.success.hex}}1a",
+        "created.border": "#{{ui.status.success.hex}}80",
+        "deleted": "#{{ui.status.error.hex}}ff",
+        "deleted.background": "#{{ui.status.error.hex}}1a",
+        "deleted.border": "#{{ui.status.error.hex}}80",
+        "error": "#{{ui.status.error.hex}}ff",
+        "error.background": "#{{ui.status.error.hex}}1a",
+        "error.border": "#{{ui.status.error.hex}}80",
+        "hidden": "#{{ui.whitespace.foreground.hex}}ff",
+        "hidden.background": "#{{ui.selection.background.hex}}1a",
+        "hidden.border": "#{{ui.selection.background.hex}}ff",
+        "hint": "#{{ui.link.normal.foreground.hex}}ff",
+        "hint.background": "#{{ui.link.normal.foreground.hex}}1a",
+        "hint.border": "#{{ui.link.normal.foreground.hex}}80",
+        "ignored": "#{{ui.whitespace.foreground.hex}}ff",
+        "ignored.background": "#{{ui.selection.background.hex}}1a",
+        "ignored.border": "#{{ui.selection.background.hex}}ff",
+        "info": "#{{ui.status.info.hex}}ff",
+        "info.background": "#{{ui.status.info.hex}}1a",
+        "info.border": "#{{ui.status.info.hex}}80",
+        "modified": "#{{ui.status.warning.hex}}ff",
+        "modified.background": "#{{ui.status.warning.hex}}1a",
+        "modified.border": "#{{ui.status.warning.hex}}80",
+        "predictive": "#{{ui.whitespace.foreground.hex}}ff",
+        "predictive.background": "#{{ui.whitespace.foreground.hex}}1a",
+        "predictive.border": "#{{ui.whitespace.foreground.hex}}80",
+        "renamed": "#{{ui.status.info.hex}}ff",
+        "renamed.background": "#{{ui.status.info.hex}}1a",
+        "renamed.border": "#{{ui.status.info.hex}}80",
+        "success": "#{{ui.status.success.hex}}ff",
+        "success.background": "#{{ui.status.success.hex}}1a",
+        "success.border": "#{{ui.status.success.hex}}80",
+        "unreachable": "#{{ui.global.foreground.dark.hex}}ff",
+        "unreachable.background": "#{{ui.whitespace.foreground.hex}}1a",
+        "unreachable.border": "#{{ui.whitespace.foreground.hex}}ff",
+        "warning": "#{{ui.status.warning.hex}}ff",
+        "warning.background": "#{{ui.status.warning.hex}}1a",
+        "warning.border": "#{{ui.status.warning.hex}}80",
+        "players": [
+          { "cursor": "#{{palette.blue.normal.hex}}ff", "background": "#{{palette.blue.normal.hex}}20", "selection": "#{{palette.blue.normal.hex}}30" },
+          { "cursor": "#{{palette.magenta.normal.hex}}ff", "background": "#{{palette.magenta.normal.hex}}20", "selection": "#{{palette.magenta.normal.hex}}30" },
+          { "cursor": "#{{palette.red.normal.hex}}ff", "background": "#{{palette.red.normal.hex}}20", "selection": "#{{palette.red.normal.hex}}30" },
+          { "cursor": "#{{palette.orange.normal.hex}}ff", "background": "#{{palette.orange.normal.hex}}20", "selection": "#{{palette.orange.normal.hex}}30" },
+          { "cursor": "#{{palette.yellow.normal.hex}}ff", "background": "#{{palette.yellow.normal.hex}}20", "selection": "#{{palette.yellow.normal.hex}}30" },
+          { "cursor": "#{{palette.green.normal.hex}}ff", "background": "#{{palette.green.normal.hex}}20", "selection": "#{{palette.green.normal.hex}}30" },
+          { "cursor": "#{{palette.cyan.normal.hex}}ff", "background": "#{{palette.cyan.normal.hex}}20", "selection": "#{{palette.cyan.normal.hex}}30" },
+          { "cursor": "#{{palette.brown.normal.hex}}ff", "background": "#{{palette.brown.normal.hex}}20", "selection": "#{{palette.brown.normal.hex}}30" }
+        ],
+        "syntax": {
+          "attribute": {
+            "color": "#{{syntax.entity.other.attribute-name.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "boolean": {
+            "color": "#{{syntax.constant.language.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "comment": {
+            "color": "#{{syntax.comment.default.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "comment.doc": {
+            "color": "#{{syntax.comment.documentation.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "constant": {
+            "color": "#{{syntax.constant.default.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "constructor": {
+            "color": "#{{syntax.entity.name.function.constructor.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "embedded": {
+            "color": "#{{syntax.meta.embedded.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "emphasis": {
+            "color": "#{{syntax.markup.italic.hex}}ff",
+            "font_style": "italic",
+            "font_weight": null
+          },
+          "emphasis.strong": {
+            "color": "#{{syntax.markup.bold.hex}}ff",
+            "font_style": null,
+            "font_weight": 700
+          },
+          "enum": {
+            "color": "#{{syntax.entity.name.type.enum.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "function": {
+            "color": "#{{syntax.entity.name.function.default.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "hint": {
+            "color": "#{{palette.gray.normal.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "keyword": {
+            "color": "#{{syntax.keyword.default.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "label": {
+            "color": "#{{syntax.entity.name.label.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "link_text": {
+            "color": "#{{syntax.markup.link.hex}}ff",
+            "font_style": "normal",
+            "font_weight": null
+          },
+          "link_uri": {
+            "color": "#{{syntax.markup.underline.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "namespace": {
+            "color": "#{{syntax.entity.name.namespace.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "number": {
+            "color": "#{{syntax.constant.numeric.default.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "operator": {
+            "color": "#{{syntax.keyword.operator.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "predictive": {
+            "color": "#{{palette.gray.normal.hex}}ff",
+            "font_style": "italic",
+            "font_weight": null
+          },
+          "preproc": {
+            "color": "#{{syntax.meta.preprocessor.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "primary": {
+            "color": "#{{ui.global.foreground.normal.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "property": {
+            "color": "#{{syntax.variable.other.property.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "punctuation": {
+            "color": "#{{syntax.punctuation.default.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "punctuation.bracket": {
+            "color": "#{{syntax.punctuation.section.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "punctuation.delimiter": {
+            "color": "#{{syntax.punctuation.separator.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "punctuation.list_marker": {
+            "color": "#{{syntax.markup.list.default.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "punctuation.markup": {
+            "color": "#{{syntax.punctuation.definition.default.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "punctuation.special": {
+            "color": "#{{palette.brown.normal.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "selector": {
+            "color": "#{{syntax.keyword.default.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "selector.pseudo": {
+            "color": "#{{palette.cyan.normal.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "string": {
+            "color": "#{{syntax.string.default.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "string.escape": {
+            "color": "#{{syntax.constant.character.escape.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "string.regex": {
+            "color": "#{{syntax.string.regexp.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "string.special": {
+            "color": "#{{syntax.string.interpolated.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "string.special.symbol": {
+            "color": "#{{syntax.string.default.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "tag": {
+            "color": "#{{syntax.entity.name.tag.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "text.literal": {
+            "color": "#{{syntax.markup.raw.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "title": {
+            "color": "#{{syntax.markup.heading.hex}}ff",
+            "font_style": null,
+            "font_weight": 700
+          },
+          "type": {
+            "color": "#{{syntax.entity.name.type.default.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "variable": {
+            "color": "#{{syntax.variable.default.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "variable.special": {
+            "color": "#{{syntax.variable.language.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "variant": {
+            "color": "#{{syntax.entity.name.function.default.hex}}ff",
+            "font_style": null,
+            "font_weight": null
+          }
+        }
+      }
+    }
+  ]
+}
